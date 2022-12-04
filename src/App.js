@@ -24,7 +24,6 @@ const steps = [
     id: "4",
     options: [
       { value: 1, label: "When is the Wedding? 🗓️", trigger: "5" },
-      { value: 2, label: "Want to see our pics! 📷", trigger: "17" },
     ],
   },
   {
