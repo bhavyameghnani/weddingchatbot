@@ -1,7 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
 import bg from "../src/Resources/Images/bg.png";
+import { ThemeProvider } from 'styled-components';
 import ChatBot from "react-simple-chatbot";
+
+// all available props
+const theme = {
+  backgroundImage: `url(${bg})`,
+  // background: '#f5f8fb',
+  fontFamily: 'Helvetica Neue',
+  headerBgColor: '#EF6C00',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+};
 
 const steps = [
   {
@@ -121,6 +132,7 @@ const steps = [
 function App() {
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
       <ChatBot
         steps={steps}
         // speechSynthesis={{ enable: true, lang: "en", rate: 0.5 }}
@@ -138,6 +150,7 @@ function App() {
         }}
         bubbleStyle={{ background: "white", color: "#4a4a4a" }}
       />
+      </ThemeProvider>
     </div>
   );
 }
