@@ -9,8 +9,8 @@ const theme = {
   backgroundImage: `url(${bg})`,
   // background: '#f5f8fb',
   fontFamily: 'Helvetica Neue',
-  headerBgColor: '#EF6C00',
-  headerFontColor: '#fff',
+  headerBgColor: 'white',
+  headerFontColor: 'black',
   headerFontSize: '15px',
 };
 
@@ -73,9 +73,18 @@ const steps = [
   },
   {
     id: "11",
-    message: "https://goo.gl/maps/8bApXo8Hs1XxZbCt9",
+    component: (
+      <div>
+      <a href="https://goo.gl/maps/8bApXo8Hs1XxZbCt9">Google Maps Link</a>
+      </div>
+    ),
     trigger: "12",
   },
+  // {
+  //   id: "11",
+  //   message: "https://goo.gl/maps/8bApXo8Hs1XxZbCt9",
+  //   trigger: "12",
+  // },
   {
     id: "12",
     options: [{ value: 1, label: "Show more pics! 📷", trigger: "13" }],
@@ -139,7 +148,7 @@ function App() {
         style={{
           backgroundImage: `url(${bg})`,
         }}
-        contentStyle={{ height: "100vh", width: "100%" }}
+        contentStyle={{ height: "100vh", width: "100%"}}
         headerTitle="#SuKun"
         hideBotAvatar="true"
         hideUserAvatar="true"
@@ -147,8 +156,10 @@ function App() {
           background: "white",
           color: "#4a4a4a",
           fontFamily: "Helvetica Neue",
+         
+
         }}
-        bubbleStyle={{ background: "white", color: "#4a4a4a" }}
+        bubbleStyle={{ background: "white", color: "#4a4a4a",  textAlign:"left"}}
       />
       </ThemeProvider>
     </div>
