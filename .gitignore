@@ -12,7 +12,7 @@
 /build
 
 # Resources
-/src/Resources/Images
+**/src/Resources/
 
 # misc
 .DS_Store
