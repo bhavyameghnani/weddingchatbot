@@ -9,6 +9,7 @@ import b5 from "../src/Resources/Images/5.jpg";
 import b6 from "../src/Resources/Images/6.jpg";
 import b7 from "../src/Resources/Images/7.jpg";
 import b8 from "../src/Resources/Images/8.jpg";
+import card from "../src/Resources/Documents/KunalSurbhiChatBotCard.pdf"
 import { ThemeProvider } from "styled-components";
 import ChatBot from "react-simple-chatbot";
 
@@ -94,14 +95,14 @@ const steps = [
   {
     id: "12",
     options: [
-      { value: 2, label: "Show more pics! 📷", trigger: "17" },
+      { value: 2, label: "Show some pics! 📷", trigger: "17" },
       { value: 1, label: "Where do I need to come? 📍", trigger: "9" }
     ],
   },
   {
     id: "30",
     options: [
-      { value: 1, label: "Show more pics! 📷", trigger: "13" },
+      { value: 1, label: "Show some pics! 📷", trigger: "13" },
     ]
   },
   {
@@ -156,8 +157,13 @@ const steps = [
   },
   {
     id: "16",
-    message: "Bye",
-    end: true,
+    component: (
+      <div>
+        {" "}
+        <a href={card} download>Click to download Wedding Card</a>{" "}
+      </div>
+    ),
+    end: true
   },
   {
     id: "17",
