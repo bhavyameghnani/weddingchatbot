@@ -1,14 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import bg from "../src/Resources/Images/bg.png";
-import b1 from "../src/Resources/Images/1.jpg";
-import b2 from "../src/Resources/Images/2.jpg";
-import b3 from "../src/Resources/Images/3.jpg";
-import b4 from "../src/Resources/Images/4.jpg";
-import b5 from "../src/Resources/Images/5.jpg";
-import b6 from "../src/Resources/Images/6.jpg";
-import b7 from "../src/Resources/Images/7.jpg";
-import b8 from "../src/Resources/Images/8.jpg";
+import b1 from "../src/Resources/Images/1.jpeg";
+import b2 from "../src/Resources/Images/2.jpeg";
+import b3 from "../src/Resources/Images/3.jpeg";
+import b4 from "../src/Resources/Images/4.jpeg";
+import b5 from "../src/Resources/Images/5.jpeg";
+import b6 from "../src/Resources/Images/6.jpeg";
 import card from "../src/Resources/Documents/KunalSurbhiChatBotCard.pdf"
 import { ThemeProvider } from "styled-components";
 import ChatBot from "react-simple-chatbot";
@@ -123,28 +121,28 @@ const steps = [
         <img height="100%" width="100%" src={b6} />{" "}
       </div>
     ),
-    trigger: "23",
-  },
-  {
-    id: "23",
-    component: (
-      <div>
-        {" "}
-        <img height="100%" width="100%" src={b7} />{" "}
-      </div>
-    ),
-    trigger: "24",
-  },
-  {
-    id: "24",
-    component: (
-      <div>
-        {" "}
-        <img height="100%" width="100%" src={b8} />{" "}
-      </div>
-    ),
     trigger: "14",
   },
+  // {
+  //   id: "23",
+  //   component: (
+  //     <div>
+  //       {" "}
+  //       <img height="100%" width="100%" src={b7} />{" "}
+  //     </div>
+  //   ),
+  //   trigger: "24",
+  // },
+  // {
+  //   id: "24",
+  //   component: (
+  //     <div>
+  //       {" "}
+  //       <img height="100%" width="100%" src={b8} />{" "}
+  //     </div>
+  //   ),
+  //   trigger: "14",
+  // },
   {
     id: "14",
     message: "Hope you join & bless us! 🥰",
